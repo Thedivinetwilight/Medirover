@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medirover"
+version = "0.1.0"
+description = "Medirover v0.1 — clean-rebuild medical rover platform (simulation-first, no hardware attached)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110,<1.0",
+    "uvicorn[standard]>=0.29",
+    "sqlalchemy>=2.0,<3.0",
+    "alembic>=1.13",
+    "pydantic>=2.7,<3.0",
+    "pydantic-settings>=2.2,<3.0",
+    "PyYAML>=6.0.1",
+    "websockets>=12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "httpx>=0.27",
+    "ruff>=0.4",
+    "mypy>=1.10",
+]
+
+[tool.setuptools.packages.find]
+include = ["shared*", "backend*", "firmware*", "tools*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["backend/tests", "firmware/tests", "tests"]
+addopts = "-q"
+markers = [
+    "e2e: end-to-end vertical slice tests (real WebSocket transport)",
+    "slow: tests longer than ~10 seconds",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+extend-exclude = [".venv", "build", "dist", ".git", "data", "results", "node_modules"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.ruff.lint.flake8-bugbear]
+# FastAPI's documented pattern uses Depends()/Query() in signature defaults
+extend-immutable-calls = ["fastapi.Depends", "fastapi.Query"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "."
+packages = ["shared", "backend", "firmware", "tools"]
+ignore_missing_imports = true
+check_untyped_defs = true
+no_implicit_optional = true
+disallow_untyped_defs = false
