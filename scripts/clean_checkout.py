@@ -217,12 +217,20 @@ def main() -> int:
             break
         else:
             raise RuntimeError("node never reached ONLINE")
-        with urllib.request.urlopen(
-            f"http://127.0.0.1:{port}/api/v1/nodes/motion-cc/telemetry?limit=50", timeout=3
-        ) as resp:  # noqa: S310
-            telemetry = json.loads(resp.read())
+        # First telemetry can lag identify (profile-dependent interval):
+        # poll briefly instead of sampling once.
+        telemetry: list = []
+        deadline = time.time() + 15
+        while time.time() < deadline:
+            with urllib.request.urlopen(
+                f"http://127.0.0.1:{port}/api/v1/nodes/motion-cc/telemetry?limit=50", timeout=3
+            ) as resp:  # noqa: S310
+                telemetry = json.loads(resp.read())
+            if telemetry:
+                break
+            time.sleep(0.5)
         if not telemetry:
-            raise RuntimeError("no telemetry rows")
+            raise RuntimeError("no telemetry rows within 15s of ONLINE")
         return f"ONLINE, {len(telemetry)} telemetry rows"
 
     step("api: node online + telemetry", do_api)
