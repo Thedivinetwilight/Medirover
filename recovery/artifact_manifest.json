@@ -1,0 +1,1348 @@
+{
+  "entries": [
+    {
+      "class": "IMPORTANT",
+      "path": ".github/workflows/ci.yml",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "3ece3c9448399c7ba30f69b9dac4c07139ec4961dd950805586b196021274d4c",
+      "size": 727,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "Makefile",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "4183ebda2c6c67465fb80cda4f1dfa0c63839330bd4ba82d11b61a72e310c8ba",
+      "size": 778,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "README.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "fdd0d468bb7aa1c3efb98a9cb196f8fc445b9fd69263dd59694224640a6e2fa3",
+      "size": 5515,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "alembic.ini",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "86fe4e19b1bda3fe7ca18589c139ca03945d050406db71cc2ee4dfddf2394519",
+      "size": 707,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0b6810d08b546f54c4d34b67af3539cddd7e00d7a4bc9b5b94487cb97d285525",
+      "size": 68,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "4c054152e439c11ec95ae8eb5f89338ffb0f7eb3f8bd6ab45a2d069cdec818c9",
+      "size": 59,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/app.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "947a3d00c11deecad48e93124af8b220944e29da4dee7c77f1738d94380953da",
+      "size": 3710,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/context.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "5dc3a562052a4181d08a8a36131e61d2bd08ef885576f952d3315e56ba6c83a5",
+      "size": 779,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/deps.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "e9702aae769e75826ccba0e73ddb15a04cb8d49c27fb4876430c803a74f4741a",
+      "size": 479,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/errors.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "e584197e579cd42150ba5dca1de046545f008e969f85a86548d001feb603833d",
+      "size": 3364,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/routes_events.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0ddec09fd4088efa6dcd7aa151fee093989edf18d4a3a9a8826ae01ee6f7ec75",
+      "size": 1293,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/routes_faults.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "9fe7b9629fb65d5dd051a141bd532e82c7b692350ca56bc6445a0244fda31c7f",
+      "size": 1278,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/routes_health.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "f05dab031fe658ec70a49ac7413ec37d2416b370f35fc60037cf2e8918ba1ece",
+      "size": 1109,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/routes_nodes.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "4ea14ee5eeced72a5e7c46d4444cc7b4d389fa47fb7caf41e50145d282eb66c3",
+      "size": 3389,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/ws_nodes.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "d1c9f16dffd1cee58cb9a54e1ed2d9f738a1b585d5442a2e6898d0f6cbee9569",
+      "size": 1323,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/api/ws_state.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "15682f813be0eaea889737929cd6ed9725b67255beba06dd0a390007041af87c",
+      "size": 2069,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/config.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "22b22560759dd6f7d7874a9195ffa18ec8dcbc36ad39e160200f17a74d9dc5bb",
+      "size": 6017,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/core/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "8b3f490603cac456c9fa83c7e16c7c54fdfcfb6dd7552ea940deff7dadeca98a",
+      "size": 46,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/core/logging.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "b7e21838d958c0e2e493786b5b376b1620afbca4160ccb82b3e530d8d70b87f7",
+      "size": 1683,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/database/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7345ee44fca1ffb7543d2e8fb2f4d5dd49472f2c0fc7ae07357df7588ab45381",
+      "size": 69,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/database/engine.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0c192acbf610cd15cdac4509b7a8dd3c97c7c1e9a162b224fbe8cb24e0c5b89c",
+      "size": 2054,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/database/migrations/env.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "03f3ba8df2020ebdd75b6273a00ef05d609f6bf1904696e4a57823ac5bc17237",
+      "size": 1893,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/database/migrations/versions/0001_initial.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "91c4b06cb6ccb43330d3e8dbade024e100a6d5b810bbb887189d1e0c932fb78a",
+      "size": 4662,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/database/models.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "6df725fc4e0b49b5a46ab737a7d3ecaba49995fceb30458f9ff1baf681eaf095",
+      "size": 5534,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/main.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0f373ae2cf97f5f92c5b00decd420cce609e8be6886fa01b7a952dde7e17c89c",
+      "size": 323,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/schemas/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "f96f730882dcb938c9d1b480ac983f69ac0298d167488564adfbc9374b9afc83",
+      "size": 60,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/schemas/api.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "23757e0ce60b2054b30fe19f2ad1f5c2498601726b1a395e594f49d1d9d96557",
+      "size": 2367,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "6e9a3a602cee1e24cc9d43f845b008ae55013db12d217e35245f1cec24ece68d",
+      "size": 72,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/audit.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "a53caa180e5cf400c29e9b2b56ac1f6e1fa01cd7bd7de20b6eb726a1b08e40af",
+      "size": 976,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/broadcaster.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "63f443febf860c2a52a0df98430ada84050d4a235e9f89f110917d65eb5fdfab",
+      "size": 4281,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/eventing.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "856c16a897cf5db08aab1ea143000ae1c9fbf6de6d98cb6d2274093616b04fa6",
+      "size": 4889,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/node_manager.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "bcc6cd6fbea8175f5211d2538ba5acb21d741ac0b6073e27580cb532a41bb965",
+      "size": 23130,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/node_supervisor.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "804bf5e0f97b4b1b0ccc170a0e529a7a3af81d6889651d4de5a1b65e077c392c",
+      "size": 3910,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/telemetry_ingest.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0c4606995af4c97fd80c9b160aa76a2f2940105739c3e9169e9c1ede5b572f0c",
+      "size": 1296,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/services/ws_types.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "92100d902b80704c9422a917a6bb9de81b35c4dae494353ad586184c375d8045",
+      "size": 567,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/state/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "2c4d224b949b8fad869f2fa996656a0663daa066628941209ae6fbd79f8014ce",
+      "size": 50,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/state/node_fsm.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "17cb69ccd904168adb673a0b0b75cac2e9f7c2d49234278fd4ad30d2753728ed",
+      "size": 2037,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/tests/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "a6c3f75447fc98e3413d479235a6c96afee67af67847d6c95520a6356088d2a2",
+      "size": 26,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/tests/test_broadcaster.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "d750727b3e12c2a6a38739c8e38fe7d7caaf2a5d5d1d4ded1e3b945d50d5a269",
+      "size": 1968,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/tests/test_config.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "c59e13e44057aac9604d94daa426bc48ecc58bf6d20e235912b2881e399de2e0",
+      "size": 2008,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "backend/tests/test_supervisor.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "9a4624fb74574d062bc8092adb51f3eb92f77843688a0f88e32c2e5bf5be2b5b",
+      "size": 4037,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "config/development.yaml",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "9ca859a1ab6bd7468590de14ae44a22bae5ea358c78058f7444d07d791d7ec2b",
+      "size": 589,
+      "type": "config",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "config/hardware.yaml",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "cd902bb9393534ea681251bfadd42a22894ae6ca51eac118b43782d70200c550",
+      "size": 790,
+      "type": "config",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "config/simulation.yaml",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "d57f1fb0e779ceae4a46cf2ec286c9c0915145e489241ff56a4af3b636fdce7c",
+      "size": 524,
+      "type": "config",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "config/testing.yaml",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "d66d22b7b7f2eab9297a0721ec4e44859c2cd8e0e74828cec3b4a4bcbe2bc640",
+      "size": 536,
+      "type": "config",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/API.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "79e619392f281821b48cc9c43bdca37796475c86bbd420a7e08760fcf60578f5",
+      "size": 3436,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/ARCHITECTURE.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "1d9268bee339b67e6aab7eb040efa996f5839b37e8568c1e096444dc36e4f0a0",
+      "size": 8102,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/ARTIFACTS_AND_RETENTION.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "5ce1216a652a0eae03e30d428329ca96d3edbfdb64959488ffa31f753cf023d5",
+      "size": 2934,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/DEVELOPMENT.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "dde4ec4f054314e8deaf399f95e049602f14b0fc3b36e1aa64ade6a2819da3d1",
+      "size": 2838,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/LEGACY_KNOWLEDGE_MAP.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "03334f051640eeb8e28f5195e4fabf85d620de3d904580dface8644f6e055899",
+      "size": 1760,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/MILESTONES.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "7c748327c598a6c77558c38d37a9c02c49023c8a17923bd4ebb1eaaf9060c2af",
+      "size": 3787,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/OPERATIONS.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "4c6ae1f3141ed1487d029069f2e6d4991eb8a1d39d9c748f2628c10c349fbed4",
+      "size": 4049,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/PROTOCOL.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "ed385cee85bae6c16bf2b364b1caf5484ce3a001154efec65c8b75d8dad34c1b",
+      "size": 4601,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/SAFETY.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "674773c22bd50beeacf8a45a29861cc8d0bcbc6e67e5a272ce387bcf54399a42",
+      "size": 3076,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/SECURITY.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "f31aa98b0cbd57e7da7891acb50c049aea4b93d852cfbe5a6aabbc3a8ed8f31b",
+      "size": 3182,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/STATE_MACHINES.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "eda23063a18a33255aec6c2c9e20a69677fe3c50e20e06cb5affe9710f7245e0",
+      "size": 3918,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/STATUS_MATRIX.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "bd8776cd521c16404b807d8109c76ecfe6be56e92c0a9d6e453cfa0fbc520835",
+      "size": 2997,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "docs/TESTING.md",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "9c0224dbe2b879644ff3deabe9b0d5429bbdec781e144ec99a2de5c60cae2507",
+      "size": 3253,
+      "type": "doc",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "c7b42961eda8a2d2c3151dd835de0979a2cc48d06ad396d36af33c9e7b127f6a",
+      "size": 307,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/common/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "01415443eab6af12c24fb9b2ee7417a219a05a35cd28846d2837d2564d00b7f2",
+      "size": 49,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/common/node_context.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "d8667e810fc4ced4ed64435b90fc87e569f0fa6ab849d3c0630f71453ce061cf",
+      "size": 1021,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/communication/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "3ce8eee60c1409b6c3c131be8cc9a1150bd08bf1141b1cf40d7b827f6bfb8510",
+      "size": 71,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/communication/client.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "666b58650e0379b9a89036db434e8b371717531574f19454b3489fdac1732ca0",
+      "size": 9786,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/communication/simulated_transport.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "06621e86fc156ac0254307644a4fe30635da799822361ca2f2d850b011324b0d",
+      "size": 1578,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/communication/ws_transport.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "c728025e469f19a36493f2c90f2e9384cb73d0eae80941b4bdeef87e29b72aac",
+      "size": 1491,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/hardware/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0544c2013e586257f69f89ec1b5f076c9bd4503bc783f22ce7fd188433c2621c",
+      "size": 458,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/hardware/interfaces.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7af3a2c6f7b19c857eeac045bc254e9b97312dbbdc27afc803874c927209e395",
+      "size": 2094,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/hardware/simulated.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "5a7091e53df3d881caf4a392d9fc9e0f5304130f1d419f35a26ddbace77d3863",
+      "size": 5615,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/motion_node/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "f3dc49f56bc5ee21e7251335360cad4ed4aefcd2df35713eb0f30e0a297bcd22",
+      "size": 57,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/motion_node/node.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "edf48b7c59743967a6fdda4456976cbc8ca0b15374e10edba1279cb0de8bac50",
+      "size": 6379,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/sensor_node/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "040e60e08a9291de9ec26df44713312cfee1cd78f24d0f6ded91832a742a3bb1",
+      "size": 50,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/sensor_node/node.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0b8f3ec60f56c79f2baf52e47178ec5132a101ac92feec588dd3a1aea50884d0",
+      "size": 3550,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/simulation/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "8dc9d298307459487fa12a22f3830a3639e9ec9d19edcbc397fa9d49eec624c6",
+      "size": 42,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/simulation/demo_node.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "c5d4d13c76f30f97d7ddf4b908f3c0328db6e3e2fb4082932d35bade68fc8105",
+      "size": 4192,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/tests/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "e42b8fcf160f5da8f3dbe14b9e364b60d6ea6710c2c26341885ea96c0488b253",
+      "size": 84,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/tests/fake_backend.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0d26b6041b299e7862c8fe0a93c4a0a9b69332eeb71110297eb65ae7399db2ad",
+      "size": 4657,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/tests/test_client_protocol.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0da30785285591d9dfe3c76419c4ad6050670f36f6c793ab4f0a81cf4414e83e",
+      "size": 2826,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "firmware/tests/test_motion_node.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "830b22088506d7df7181a18af6dac3e962cfdecd99d2b221eab029df173dcf22",
+      "size": 4532,
+      "type": "firmware",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/css/style.css",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "26ace6b1c0065794fd9571a23a955e3e5c76b70fa9f9de01a3d8a6522c44d0a3",
+      "size": 5533,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/index.html",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "8a4b52d7829378d4e2e93aaf4b5618fa95922d3e793a1984eef65dc235a43e84",
+      "size": 1349,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/components/event_feed.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "c0159ddec6bbc0e54088356db0bbaf020f3fea0bd515d544561375010b503082",
+      "size": 1009,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/components/status_card.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7f8276885d8242bad435665cb0a89823cc33cf0b6780f725e425d9779d6e0514",
+      "size": 3972,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/main.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "6a567280e8dc6ac4636ec850a98bd2d7ad981a8b92f668f86ebf778bbea55247",
+      "size": 3475,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/services/api.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "5bcd6c9165efa2bde5f1e39c88415eaa6c910773d0545f7fe55dc500c2b39ce8",
+      "size": 742,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/services/ws_client.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "1b8e33c6c06233e99520b9892c4c8ada0aa966863a52918314d87abe87c406c5",
+      "size": 2480,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "frontend/js/src/state/store.js",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "799898a97b9cc844b3cd158506833d55c64a91e2bf7cf1c8a813b8c904caf6e4",
+      "size": 1592,
+      "type": "frontend",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "frontend/tests/store.test.mjs",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "ea4b7cca15459aa3163b8c18e57318632e0e965485982dcab15e63e951ba33b5",
+      "size": 1664,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "pyproject.toml",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "1d3749d48a61c2f82e4f199e43208ef2ff423add67b4559e93a3715ca1f2492b",
+      "size": 1603,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "recovery/PROJECT_STATE.json",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "f9cc77636a48b34dc958eb14694965369aa6c7d9c17627222139320c3551cb70",
+      "size": 1740,
+      "type": "state",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "recovery/PROJECT_STATE.md",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "9a24bd160b8086c956a3d219b5f7b541a98a9b25badb42ff71e72d13fb07ebf3",
+      "size": 1568,
+      "type": "state",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "results/persistence_validation.json",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "72f3ae7a4ebd792afc28acee2acdb9fa6302214436d21a980890f63bf61ca7b1",
+      "size": 1001,
+      "type": "canonical_result",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "results/storage_audit.json",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "8473ba762e531907be6e4040601f068206aca9bd2b28c8c6923aef056c9793ea",
+      "size": 1328,
+      "type": "canonical_result",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "results/test_history.jsonl",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "79c41821ead4edcf687d5fa9fd5523a5add85287fe3d333ebdd19ef4406acaca",
+      "size": 4687,
+      "type": "canonical_result",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "scripts/clean_checkout.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "5bc90acc613b49f6dcbc971bcf6e7cd4de436a63b8c6fec874d867870d8c5bb2",
+      "size": 9880,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "scripts/demo.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "c76e9a4d0f885800694f872a4677f7d031a0f25b59e00edf13b0730376be8e23",
+      "size": 3751,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "04031609a13146401480a514683eed67a8cb00e991bfc337b909189b520f43c9",
+      "size": 239,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/constants/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "e410f1c59460b5a64d7272f7c621ebef0507cd5ff10c982ea151a5a6341194ca",
+      "size": 961,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/errors/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0eb6cd99b0d29fba0905eb9c3dfa9116b63ea1fa324c421ac8aab0e16bc203d1",
+      "size": 6479,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/events/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "586072881a30b465cd5c9efb15abd30017da778eb15a1cf21067992ebca71e58",
+      "size": 1634,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/fsm/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "9bc8de452640ee04e2331a00fe72a8a4ddcd986a6746f8ae0a5f2cbf046792ae",
+      "size": 346,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/fsm/base.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "46a49e5649ea052bea6564d05564fcc8d5c6d61b8c4850afab5cf4fec1ac6f0b",
+      "size": 3419,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/protocols/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "b754cfb9a968f330e6ef3721a1d241e5663a81eb726f64b487b851e476658694",
+      "size": 938,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/protocols/codec.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "125e32ab42865f7807e09d2a2e189df47071f6e821c47e5fe690f80118dd5c8c",
+      "size": 1584,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/protocols/registry.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "4a96b96cde8520e98e72d1e0e7fe3326f1a3a55cc6417492df50e7c46b5b4225",
+      "size": 3458,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/protocols/sequence.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "83f1107f7afec7d6c09435521b91cbf35680dfff8ea3f771bb8940cd88cc7c11",
+      "size": 1391,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/protocols/validator.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "e1c724f4b1c28e455fd167b53c0053604b54019098bf97b7b3d9067e3b5fa944",
+      "size": 5742,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/safety/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7c13623b185e106f8833a261faae787d5bef2aa3542766c4ee96b65555953b24",
+      "size": 608,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/safety/machine.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "af2e43cee3e792267fed5ad4fceb67ccb1eb3787ddd29982c21abc94d68cdc61",
+      "size": 3090,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/schemas/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "5e025888dfbda225f83bb9520348b9b68e6632c769c276ea14c55de4c4c01ed5",
+      "size": 79,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/schemas/envelope.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "b413076d8a512679d43c1db8cbcc064e9a7fdaa74cf25ee7bcf879e2eef40aca",
+      "size": 2408,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/schemas/node.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "165fe329c8e7c28ad07f4b86435472e0105011c6269832cd7c582b2ca484dc97",
+      "size": 2655,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/schemas/project_state.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "6bfbf33263965b8eebf720e6dc531ca772a4361bcfe83c6f11183411468aed0a",
+      "size": 2836,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/types/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "ff138874df3d869fc7fa3936e79d78ffd93418935ad8c48f777001932676e951",
+      "size": 2382,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/utils/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "878f971ac55bf51e4a2b9207435da7838598c575a358ea561c52d27f00158736",
+      "size": 74,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/utils/asyncutil.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "dfabb6094817d664d2a457ee91e2d0a7cb0cd786e1c40c7cb8c23be115d2fcc7",
+      "size": 582,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/utils/ids.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "4588127acc003596a8c192f0b76581ed02c7636cf4bb1de833c09e3848dbf6b1",
+      "size": 204,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/utils/jsonutil.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "55e7d314268f108b7b9c87482679103a13f609421d2646ed213fa6e2169d32e8",
+      "size": 262,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "shared/utils/timeutil.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "58b1b79a86ed4b66e915b36c7a26940230bd27258cc8f51b4de3e0209714404b",
+      "size": 797,
+      "type": "source",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/conftest.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "ac0bcf7a11f9a092b331ac811c7d0c04adf76518f4f7f0eea1f58055e54f2410",
+      "size": 7672,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/persistence/__init__.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "3ddfd4a3fe82c0fe293e9752b8b5f9b8a21a4435f7ee0ca97fcb089c6671a376",
+      "size": 59,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/persistence/test_process_boundary.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "ec69732b84cd853f8b4212b668b97810c5141de6c60e750319be304eb35d39bf",
+      "size": 4032,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_api_contract.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "47f502613e9e09a2304bcb68045004ce574eef578eafde348f2a479d1ee98062",
+      "size": 2460,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_connectivity_fsm.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7a3e2831f0f8caeebfa73dbe5466cb6e91f58cafa66e2d245e6460bc2d4e13fe",
+      "size": 1434,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_crash_recovery.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "36f8f010774fa93054e105e7aa1ef1073108457e0f74abe100e43639875fd90a",
+      "size": 3876,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_disconnect_reconnect.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "6b9ba49210bf333f00f0e63f61648b28abb77d131511658e75b743f332c2a875",
+      "size": 3538,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_e2e_vertical_slice.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "3daaad56f6d7151ae26e31a008f633088d4e1869b242a2a6b516712a6b530226",
+      "size": 3209,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_failure_injection.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "0ac925e4322948e700006187004da413e0e6f27c8e13dcd0491706241ce9e47c",
+      "size": 5297,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_idempotency.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "a42a992d763fa053907067bb865afba902a90bcbec92e8452f99b8be65bbfe22",
+      "size": 4344,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_protocol_validation.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "7beebca5d763dbbc293f179bf504f46e30f4f17f0285b0bd9b8ad3c0a51c7f10",
+      "size": 5191,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "CRITICAL",
+      "path": "tests/test_safety_fsm.py",
+      "producer": "medirover",
+      "retention": "CRITICAL",
+      "sha256": "d13d5ce7e5729511422a16ead47a57e865f6cfe25cf918e1b59acd2c6277bc8f",
+      "size": 2514,
+      "type": "test",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "tools/__init__.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "3f5bb1bacef1579803dc3bc72667575e6338c289629a7e4227f3b7ab93041646",
+      "size": 82,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "tools/artifact_manifest.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "69ef3282a1d397a9d34bd5a500010f384cfaf457b7256956c61976c42cdc0a00",
+      "size": 4314,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "tools/project_state.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "35c51728872f3452939c195649bf1ee54639524254709e1820479eb43412d0cf",
+      "size": 7138,
+      "type": "tooling",
+      "version": "0.1.0"
+    },
+    {
+      "class": "IMPORTANT",
+      "path": "tools/storage.py",
+      "producer": "medirover",
+      "retention": "IMPORTANT",
+      "sha256": "ac0b2c6585880e7223ea1bc97747cfcd83657819c85b30525095b7aca1ead4d5",
+      "size": 4328,
+      "type": "tooling",
+      "version": "0.1.0"
+    }
+  ],
+  "entry_count": 134,
+  "generated_at": "2026-09-29T03:08:47.354682+00:00",
+  "repo": "/home/user/Medirover",
+  "schema_version": 1
+}

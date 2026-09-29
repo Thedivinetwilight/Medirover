@@ -1,0 +1,97 @@
+{
+  "file_count": 144,
+  "largest_dirs": [
+    [
+      "backend",
+      93469
+    ],
+    [
+      "firmware",
+      48839
+    ],
+    [
+      "docs",
+      47933
+    ],
+    [
+      "tests",
+      43626
+    ],
+    [
+      "shared",
+      42168
+    ],
+    [
+      "recovery",
+      39466
+    ],
+    [
+      "frontend",
+      21816
+    ],
+    [
+      "tools",
+      15862
+    ],
+    [
+      "scripts",
+      13631
+    ],
+    [
+      "results",
+      7033
+    ]
+  ],
+  "largest_files": [
+    [
+      "recovery/artifact_manifest.json",
+      36158
+    ],
+    [
+      "backend/services/node_manager.py",
+      23130
+    ],
+    [
+      "scripts/clean_checkout.py",
+      9880
+    ],
+    [
+      "firmware/communication/client.py",
+      9786
+    ],
+    [
+      "docs/ARCHITECTURE.md",
+      8102
+    ],
+    [
+      "tests/conftest.py",
+      7672
+    ],
+    [
+      "tools/project_state.py",
+      7138
+    ],
+    [
+      "shared/errors/__init__.py",
+      6479
+    ],
+    [
+      "firmware/motion_node/node.py",
+      6379
+    ],
+    [
+      "backend/config.py",
+      6017
+    ]
+  ],
+  "repo": "/home/user/Medirover",
+  "thresholds": {
+    "crit_bytes": 524288000,
+    "crit_files": 8000,
+    "warn_bytes": 209715200,
+    "warn_files": 5000
+  },
+  "total_bytes": 391283,
+  "ts": "2026-09-29T03:08:47.299441+00:00",
+  "verdict": "OK"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-29T03:08:47.119354Z",
+  "version": "0.1.0",
+  "milestone": {
+    "current": "M7",
+    "completed": [
+      "M0",
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6"
+    ],
+    "next": "M7"
+  },
+  "status": {
+    "architecture": "GREEN",
+    "backend": "GREEN",
+    "frontend": "GREEN",
+    "firmware": "YELLOW",
+    "communication": "GREEN",
+    "database": "GREEN",
+    "safety": "GREEN",
+    "testing": "GREEN",
+    "simulation": "GREEN",
+    "hardware": "RED",
+    "security": "YELLOW",
+    "storage": "GREEN",
+    "reproducibility": "GREEN"
+  },
+  "features": {
+    "completed": [
+      "M0-M6 core rebuild",
+      "M5 vertical slice (SIMULATION-VERIFIED)",
+      "M6 failure/edge/crash/idempotency tests",
+      "tooling: project_state/storage/artifact_manifest",
+      "docs set (13 files) + README"
+    ],
+    "active": "M7 close: clean-checkout local run",
+    "blocked": []
+  },
+  "known_issues": [
+    "No auth/TLS — trusted local network only (M12)",
+    "No real hardware — drivers NOT-STARTED (M8-M10)",
+    "Frontend verified via WS payload, not browser rendering"
+  ],
+  "test_status": {
+    "last_run": "2026-09-29T03:08:47Z",
+    "passed": 185,
+    "failed": 0,
+    "errors": 0,
+    "total": 185,
+    "history_path": "results/test_history.jsonl"
+  },
+  "hardware_status": "NO_HARDWARE_ATTACHED",
+  "simulation_status": "SIMULATION-VERIFIED",
+  "next_task": "Run scripts/clean_checkout.py (local) -> results/clean_checkout_validation.json; focused commits; push; verify remote",
+  "last_commit": "process-boundary-test",
+  "repository": {
+    "remote": "origin",
+    "branch": "process-boundary"
+  },
+  "decisions_index": "docs/LEGACY_DECISIONS.md"
+}
