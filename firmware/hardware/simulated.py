@@ -5,7 +5,8 @@ needs: battery drain, motor speed response, encoder integration, and an
 e-stop input that scenarios can engage/release.
 
 STATUS: SIMULATION-VERIFIED. This is not a physical model of any real
-rover; parameters are placeholders (see docs/HARDWARE.md, UNKNOWNs).
+rover; parameters are placeholders (real-hardware assumptions are UNKNOWN;
+see docs/SAFETY.md and docs/STATUS_MATRIX.md).
 """
 
 from __future__ import annotations

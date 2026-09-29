@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T03:30:09.124213Z",
+  "updated_at": "2026-09-29T13:49:31.712327Z",
   "version": "0.1.0",
   "milestone": {
     "current": "M8",
@@ -64,5 +64,20 @@
     "remote": "origin",
     "branch": "arena/01a0eafd-medirover"
   },
-  "decisions_index": "docs/LEGACY_DECISIONS.md"
+  "decisions_index": "docs/LEGACY_DECISIONS.md",
+  "recovery": {
+    "snapshot_ts": "2026-09-29T13:45Z",
+    "repository": "Thedivinetwilight/Medirover",
+    "branch": "arena/01a0eafd-medirover",
+    "starting_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498",
+    "source_tree_summary": "140 tracked files: backend (FastAPI+SQLAlchemy+alembic), firmware (Python reference nodes + simulated hardware), frontend (no-build ES dashboard), shared (protocol/FSM contracts), config/tools/scripts/tests/docs; 7576 LOC Python",
+    "languages_frameworks": "Python 3.11 (FastAPI, SQLAlchemy2, alembic, pydantic, websockets); JS ES modules; YAML; Node 22",
+    "test_commands": "make check (ruff+mypy+pytest); make test-frontend; make clean-checkout",
+    "build_commands": "make install; make migrate; make demo",
+    "major_subsystems": "[backend api, node manager, ingest, eventing, broadcaster, supervisor, migrations, safety/connectivity FSMs, protocol validator, motion/sensor nodes, simulated hardware, frontend store/ws, demo+clean-checkout scripts, state/storage/manifest tools]",
+    "detected_todos": "none (0 TODO/FIXME); 2 dangling doc refs found and fixed",
+    "incomplete_areas": "real hardware drivers (M8), MCU port (M9), physical integration (M10/M11), auth/TLS (M12), sensor-node e2e coverage",
+    "hardware_dependent_areas": "firmware/hardware/simulated.py (placeholder params), config/hardware.yaml (ACK-gated), docs/SAFETY.md M10 checklist",
+    "verification_limitations": "software-only verification (SIMULATION-VERIFIED/UNIT/INTEGRATION); no physical hardware exercised; no headless-browser UI test; legacy codebase contents UNKNOWN"
+  }
 }

@@ -107,6 +107,13 @@ def render_md(state: ProjectState) -> str:
         "",
     ]
     lines += [f"- {i}" for i in state.known_issues] or ["- none recorded"]
+    if state.recovery:
+        lines += ["", "## Recovery snapshot", ""]
+        for key in sorted(state.recovery):
+            value = state.recovery[key]
+            if isinstance(value, (list, dict)):
+                value = ", ".join(str(v) for v in value) if isinstance(value, list) else json.dumps(value)
+            lines.append(f"- **{key}:** {value}")
     ts = state.test_status
     lines += [
         "",

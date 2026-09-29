@@ -58,7 +58,8 @@ class ProjectState(BaseModel):
     next_task: str = ""
     last_commit: str | None = None
     repository: RepositoryInfo = Field(default_factory=RepositoryInfo)
-    decisions_index: str = "docs/LEGACY_DECISIONS.md"
+    decisions_index: str = "docs/LEGACY_KNOWLEDGE_MAP.md"
+    recovery: dict[str, Any] = Field(default_factory=dict)
 
     @field_validator("status")
     @classmethod
