@@ -1,0 +1,25 @@
+# Medirover — testing environment (fast timing for the test suite)
+environment: testing
+host: 127.0.0.1
+port: 8010
+db_url: sqlite:///data/medirover_test.db
+
+heartbeat_interval_s: 0.2
+telemetry_interval_s: 0.1
+stale_after_s: 0.6
+offline_after_s: 1.2
+supervisor_scan_s: 0.05
+identify_timeout_s: 2.0
+
+max_frame_bytes: 16384
+frontend_dir: frontend
+log_level: WARNING
+seed: 1234
+
+demo:
+  node_id: motion-test
+  node_name: "Medirover Test Node (simulated)"
+  drop_every_s: 0.0
+  drop_for_s: 0.0
+  drive_every_s: 0.0
+  drive_duration_s: 0.5
