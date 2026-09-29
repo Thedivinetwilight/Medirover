@@ -1,6 +1,6 @@
 # Medirover — Project State
 
-_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T14:14:48.194011+00:00. This file is a rendered summary; do not edit by hand._
+_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T14:15:23.077626+00:00. This file is a rendered summary; do not edit by hand._
 
 **Version:** v0.1.0  
 **Milestone:** current `M9` | completed M0, M1, M2, M3, M4, M5, M6, M7, M8 | next M9
@@ -56,5 +56,5 @@ M9 — real MCU firmware port (motion + sensor nodes) with the same shared proto
 
 ## Repository
 
-- origin @ arena/01a0eafd-medirover | last commit `e5532a560f0b`
+- origin @ arena/01a0eafd-medirover | last commit `0d9d099cfae1`
 - decisions: `docs/LEGACY_DECISIONS.md`

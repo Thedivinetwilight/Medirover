@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T14:14:48.194011Z",
+  "updated_at": "2026-09-29T14:15:23.077626Z",
   "version": "0.1.0",
   "milestone": {
     "current": "M9",
@@ -45,7 +45,7 @@
   "hardware_status": "NO_HARDWARE_ATTACHED",
   "simulation_status": "SIMULATION-VERIFIED",
   "next_task": "M9 — real MCU firmware port (motion + sensor nodes) with the same shared protocol; acceptance: boot -> identify (source_kind=HARDWARE) -> heartbeat on real node, integration bench. Until then the codebase is stable: make check green (206 py + 4 frontend), boot check green.",
-  "last_commit": "e5532a560f0be077827b8dad63d5c4588d7437e6",
+  "last_commit": "0d9d099cfae1958f13d410a194ee64888535a7fa",
   "repository": {
     "remote": "origin",
     "branch": "arena/01a0eafd-medirover"
