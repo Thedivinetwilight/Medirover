@@ -5,8 +5,8 @@
       "path": ".github/workflows/ci.yml",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "3ece3c9448399c7ba30f69b9dac4c07139ec4961dd950805586b196021274d4c",
-      "size": 727,
+      "sha256": "e58131f3d35a96c3be953f602192106a160003a4e79659fcda4840eec9a04ddd",
+      "size": 742,
       "type": "tooling",
       "version": "0.1.0"
     },
@@ -15,8 +15,8 @@
       "path": "Makefile",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "4183ebda2c6c67465fb80cda4f1dfa0c63839330bd4ba82d11b61a72e310c8ba",
-      "size": 778,
+      "sha256": "aab56f6b592c6127376a132985269ffa135583af475d874712cfeab9388f02ad",
+      "size": 793,
       "type": "tooling",
       "version": "0.1.0"
     },
@@ -25,8 +25,8 @@
       "path": "README.md",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "fdd0d468bb7aa1c3efb98a9cb196f8fc445b9fd69263dd59694224640a6e2fa3",
-      "size": 5515,
+      "sha256": "2b142d11b89ae1e18708813eb816cc56cd0cb4ee3eb4d1c59dc6f871cad9e7c9",
+      "size": 5530,
       "type": "doc",
       "version": "0.1.0"
     },
@@ -485,8 +485,8 @@
       "path": "docs/DEVELOPMENT.md",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "dde4ec4f054314e8deaf399f95e049602f14b0fc3b36e1aa64ade6a2819da3d1",
-      "size": 2838,
+      "sha256": "a6d276c346c06a7d32e7fb3fa6dbf17e0aa3f651c0abae5e388f32104c1ace92",
+      "size": 2853,
       "type": "doc",
       "version": "0.1.0"
     },
@@ -575,8 +575,8 @@
       "path": "docs/TESTING.md",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "9c0224dbe2b879644ff3deabe9b0d5429bbdec781e144ec99a2de5c60cae2507",
-      "size": 3253,
+      "sha256": "ee09e7770289bf449fd7c524063ab626ac26c79634ce316317fb2fe989c8a92b",
+      "size": 3268,
       "type": "doc",
       "version": "0.1.0"
     },
@@ -885,7 +885,7 @@
       "path": "recovery/PROJECT_STATE.json",
       "producer": "medirover",
       "retention": "CRITICAL",
-      "sha256": "82e7368748fdcca80d7a8cc9afa2b5dcf031c1940faeb70fab5d93e86a68a049",
+      "sha256": "0f7bf49f8d3ce5f79a1b85c4971acf680e2366fc50d7b0a2d65e8264e6d356f5",
       "size": 1777,
       "type": "state",
       "version": "0.1.0"
@@ -895,7 +895,7 @@
       "path": "recovery/PROJECT_STATE.md",
       "producer": "medirover",
       "retention": "CRITICAL",
-      "sha256": "98f92678fa52d6456a78a4b452a4cc6b3ac66f154e1f3278d58ad5daae2feafb",
+      "sha256": "876b7a94cf5b328f0045a92e4d872e0c2a843b05989859a5dd0ffa88e17ec40f",
       "size": 1571,
       "type": "state",
       "version": "0.1.0"
@@ -905,7 +905,7 @@
       "path": "results/clean_checkout_validation.json",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "36f896a8d188441abf3baef481383564a3a8d038b5552ac66457ad91af058479",
+      "sha256": "5b07233015fcef142219a0458fbd3751f36a4f14b2b694a312646ce416b8509a",
       "size": 1562,
       "type": "canonical_result",
       "version": "0.1.0"
@@ -915,7 +915,7 @@
       "path": "results/persistence_validation.json",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "7c49bbaf2b660899c266e7e53e31d207d846199ac7ed66321254e0afd8ffcd0e",
+      "sha256": "840d8c90259ccd5893d2bc28ed072e7cedecfbb39166013b086155a3a64738cf",
       "size": 983,
       "type": "canonical_result",
       "version": "0.1.0"
@@ -925,7 +925,7 @@
       "path": "results/storage_audit.json",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "b776426048247a5f97748f5ecbf40bd400d443574cd3cafd669665a1f560832d",
+      "sha256": "28ad7e30599fe9477d28cf0290c9ac312b993bdf3cf0b7f5976bd097e0ca653c",
       "size": 1329,
       "type": "canonical_result",
       "version": "0.1.0"
@@ -935,8 +935,8 @@
       "path": "results/test_history.jsonl",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "27a47c490f83745f67fb5ca1a1284b83a6e151fe4688f20ff6e1e53d79d4e024",
-      "size": 5075,
+      "sha256": "ee4a5ff09a690c4e786fb966b317569944ccd1479b229826047b30202c825b74",
+      "size": 5206,
       "type": "canonical_result",
       "version": "0.1.0"
     },
@@ -1352,7 +1352,7 @@
     }
   ],
   "entry_count": 135,
-  "generated_at": "2026-09-29T03:24:50.775047+00:00",
+  "generated_at": "2026-09-29T03:30:09.252102+00:00",
   "repo": "/home/user/Medirover",
   "schema_version": 1
 }

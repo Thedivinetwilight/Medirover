@@ -11,7 +11,7 @@
     ],
     [
       "docs",
-      47989
+      48019
     ],
     [
       "tests",
@@ -19,7 +19,7 @@
     ],
     [
       "recovery",
-      43898
+      43897
     ],
     [
       "shared",
@@ -39,13 +39,13 @@
     ],
     [
       "results",
-      8949
+      9080
     ]
   ],
   "largest_files": [
     [
       "recovery/artifact_manifest.json",
-      40550
+      40549
     ],
     [
       "backend/services/node_manager.py",
@@ -91,7 +91,7 @@
     "warn_bytes": 209715200,
     "warn_files": 5000
   },
-  "total_bytes": 399006,
-  "ts": "2026-09-29T03:24:50.726611+00:00",
+  "total_bytes": 399211,
+  "ts": "2026-09-29T03:30:09.196795+00:00",
   "verdict": "OK"
 }

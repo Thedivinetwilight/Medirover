@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T03:24:50.541052Z",
+  "updated_at": "2026-09-29T03:30:09.124213Z",
   "version": "0.1.0",
   "milestone": {
     "current": "M8",
@@ -59,7 +59,7 @@
   "hardware_status": "NO_HARDWARE_ATTACHED",
   "simulation_status": "SIMULATION-VERIFIED",
   "next_task": "M8: hardware abstraction hardening + real driver skeletons (not started this session)",
-  "last_commit": "2651e85c960028db2d6a30c0fa4bc4719c04a337",
+  "last_commit": "e5532a560f0be077827b8dad63d5c4588d7437e6",
   "repository": {
     "remote": "origin",
     "branch": "arena/01a0eafd-medirover"

@@ -1,38 +1,38 @@
 {
-  "ts": "2026-09-29T03:17:52Z",
+  "ts": "2026-09-29T03:29:57Z",
   "passed": true,
   "mode": "local-clone",
-  "total_duration_s": 42.1,
+  "total_duration_s": 42.4,
   "steps": [
     {
       "name": "clone",
       "ok": true,
       "duration_s": 0.06,
-      "detail": "src=/home/user/Medirover commit=e8e86fd1b198"
+      "detail": "src=/home/user/Medirover commit=e5532a560f0b"
     },
     {
       "name": "install",
       "ok": true,
-      "duration_s": 14.73,
+      "duration_s": 14.72,
       "detail": "venv + editable install ok"
     },
     {
       "name": "migrate",
       "ok": true,
-      "duration_s": 0.5,
+      "duration_s": 0.51,
       "detail": "alembic upgrade head ok"
     },
     {
       "name": "pytest",
       "ok": true,
-      "duration_s": 20.55,
+      "duration_s": 20.86,
       "detail": "-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html"
     },
     {
       "name": "start backend+node",
       "ok": true,
       "duration_s": 1.02,
-      "detail": "backend :45561 + node motion-cc"
+      "detail": "backend :36103 + node motion-cc"
     },
     {
       "name": "api: node online + telemetry",
@@ -49,19 +49,19 @@
     {
       "name": "frontend websocket snapshot",
       "ok": true,
-      "duration_s": 0.06,
+      "duration_s": 0.04,
       "detail": "state_snapshot with node"
     },
     {
       "name": "storage audit",
       "ok": true,
-      "duration_s": 0.05,
-      "detail": "storage audit: OK \u2014 147 files, 0.52 MiB -> /tmp/medirover-cc-ml322wbb/repo/results/storage_audit.json"
+      "duration_s": 0.06,
+      "detail": "storage audit: OK \u2014 148 files, 0.52 MiB -> /tmp/medirover-cc-b_1f5avn/repo/results/storage_audit.json"
     },
     {
       "name": "stop",
       "ok": true,
-      "duration_s": 3.61,
+      "duration_s": 3.6,
       "detail": "stopped"
     }
   ]

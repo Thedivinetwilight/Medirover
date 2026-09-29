@@ -1,6 +1,6 @@
 # Medirover — Project State
 
-_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:24:50.541052+00:00. This file is a rendered summary; do not edit by hand._
+_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:30:09.124213+00:00. This file is a rendered summary; do not edit by hand._
 
 **Version:** v0.1.0  
 **Milestone:** current `M8` | completed M0, M1, M2, M3, M4, M5, M6, M7 | next M8
@@ -51,5 +51,5 @@ M8: hardware abstraction hardening + real driver skeletons (not started this ses
 
 ## Repository
 
-- origin @ arena/01a0eafd-medirover | last commit `2651e85c9600`
+- origin @ arena/01a0eafd-medirover | last commit `e5532a560f0b`
 - decisions: `docs/LEGACY_DECISIONS.md`
