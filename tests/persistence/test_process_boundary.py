@@ -19,7 +19,6 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-RECOVERY = REPO_ROOT / "recovery"
 RESULTS = REPO_ROOT / "results" / "persistence_validation.json"
 
 INIT_JSON = json.dumps(
@@ -45,8 +44,15 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def test_process_boundary_roundtrip():
+def test_process_boundary_roundtrip(tmp_path, monkeypatch):
     steps: list[dict] = []
+
+    # Redirect the CLI to a throwaway dir so the REAL recovery/ checkpoint
+    # is never touched by tests (subprocesses inherit this environment).
+    state_dir = tmp_path / "recovery"
+    state_dir.mkdir()
+    monkeypatch.setenv("MEDIROVER_STATE_DIR", str(state_dir))
+    RECOVERY = state_dir  # noqa: N806 — test-local alias
 
     # Process A: init (writes checkpoint, then exits)
     ra = run_tool(
@@ -106,7 +112,7 @@ def test_process_boundary_roundtrip():
     report = {
         "ts": __import__("time").strftime("%Y-%m-%dT%H:%M:%SZ", __import__("time").gmtime()),
         "valid": True,
-        "canonical_file": str((RECOVERY / "PROJECT_STATE.json").relative_to(REPO_ROOT)),
+        "canonical_file": "recovery/PROJECT_STATE.json",  # logical canonical name
         "sha256_after_A": hash_a,
         "sha256_after_D": sha256(RECOVERY / "PROJECT_STATE.json"),
         "file_count_checkpoint_files": len(json_files) + len(md_files),

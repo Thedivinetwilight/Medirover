@@ -16,7 +16,7 @@ test:
 	$(PY) -m pytest
 
 test-frontend:
-	node --test frontend/tests/
+	node --test 'frontend/tests/**/*.test.mjs'
 
 lint:
 	$(PY) -m ruff check .

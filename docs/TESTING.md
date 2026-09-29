@@ -25,7 +25,7 @@ at the transport or DB layer.
 
 ```bash
 make check              # ruff + mypy + pytest (backend + firmware + root)
-make test-frontend      # node --test frontend/tests/
+make test-frontend      # node --test 'frontend/tests/**/*.test.mjs'
 .venv/bin/python -m pytest tests/test_e2e_vertical_slice.py   # single file
 ```
 

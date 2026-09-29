@@ -37,7 +37,7 @@ runs a drive cycle every 15 s. Ctrl-C stops everything cleanly.
 
 ```bash
 make check          # ruff + mypy + full pytest
-make test-frontend  # node --test frontend/tests/
+make test-frontend  # node --test 'frontend/tests/**/*.test.mjs'
 make clean-checkout # full from-scratch validation → results/clean_checkout_validation.json
 ```
 

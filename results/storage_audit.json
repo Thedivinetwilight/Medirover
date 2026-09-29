@@ -15,11 +15,11 @@
     ],
     [
       "tests",
-      43626
+      43938
     ],
     [
       "recovery",
-      43622
+      43898
     ],
     [
       "shared",
@@ -31,7 +31,7 @@
     ],
     [
       "tools",
-      15862
+      16402
     ],
     [
       "scripts",
@@ -39,13 +39,13 @@
     ],
     [
       "results",
-      8578
+      8949
     ]
   ],
   "largest_files": [
     [
       "recovery/artifact_manifest.json",
-      40226
+      40550
     ],
     [
       "backend/services/node_manager.py",
@@ -64,12 +64,12 @@
       8102
     ],
     [
-      "tests/conftest.py",
-      7672
+      "tools/project_state.py",
+      7678
     ],
     [
-      "tools/project_state.py",
-      7138
+      "tests/conftest.py",
+      7672
     ],
     [
       "shared/errors/__init__.py",
@@ -91,7 +91,7 @@
     "warn_bytes": 209715200,
     "warn_files": 5000
   },
-  "total_bytes": 397507,
-  "ts": "2026-09-29T03:18:22.912605+00:00",
+  "total_bytes": 399006,
+  "ts": "2026-09-29T03:24:50.726611+00:00",
   "verdict": "OK"
 }

@@ -1,6 +1,6 @@
 # Medirover — Project State
 
-_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:18:22.722102+00:00. This file is a rendered summary; do not edit by hand._
+_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:24:50.541052+00:00. This file is a rendered summary; do not edit by hand._
 
 **Version:** v0.1.0  
 **Milestone:** current `M8` | completed M0, M1, M2, M3, M4, M5, M6, M7 | next M8
@@ -37,7 +37,7 @@ _Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-0
 
 ## Tests
 
-- last run: 2026-09-29T03:18:22+00:00 (185 passed / 0 failed / 0 errors, 185 total)
+- last run: 2026-09-29T03:24:50+00:00 (185 passed / 0 failed / 0 errors, 185 total)
 - history: `results/test_history.jsonl` (canonical, bounded)
 
 ## Hardware / simulation
@@ -47,9 +47,9 @@ _Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-0
 
 ## Next task
 
-M8: hardware abstraction hardening + real driver skeletons with fault-injection unit tests (not started this session)
+M8: hardware abstraction hardening + real driver skeletons (not started this session)
 
 ## Repository
 
-- origin @ process-boundary | last commit `e8e86fd1b198`
+- origin @ arena/01a0eafd-medirover | last commit `2651e85c9600`
 - decisions: `docs/LEGACY_DECISIONS.md`

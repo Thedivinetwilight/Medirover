@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T03:18:22.722102Z",
+  "updated_at": "2026-09-29T03:24:50.541052Z",
   "version": "0.1.0",
   "milestone": {
     "current": "M8",
@@ -49,7 +49,7 @@
     "Frontend verified via WS payload, not browser rendering"
   ],
   "test_status": {
-    "last_run": "2026-09-29T03:18:22Z",
+    "last_run": "2026-09-29T03:24:50Z",
     "passed": 185,
     "failed": 0,
     "errors": 0,
@@ -58,11 +58,11 @@
   },
   "hardware_status": "NO_HARDWARE_ATTACHED",
   "simulation_status": "SIMULATION-VERIFIED",
-  "next_task": "M8: hardware abstraction hardening + real driver skeletons with fault-injection unit tests (not started this session)",
-  "last_commit": "e8e86fd1b198c6381d2cba82df0aa40aac34e076",
+  "next_task": "M8: hardware abstraction hardening + real driver skeletons (not started this session)",
+  "last_commit": "2651e85c960028db2d6a30c0fa4bc4719c04a337",
   "repository": {
     "remote": "origin",
-    "branch": "process-boundary"
+    "branch": "arena/01a0eafd-medirover"
   },
   "decisions_index": "docs/LEGACY_DECISIONS.md"
 }

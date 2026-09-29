@@ -1,30 +1,30 @@
 {
   "canonical_file": "recovery/PROJECT_STATE.json",
   "file_count_checkpoint_files": 2,
-  "sha256_after_A": "012cc68c38a6bdc32619ad11ee217fc51f0f9b9dce43db835a07f686b73f8003",
-  "sha256_after_D": "a1db7217f426ef2324a8941f5bb0e73b5568310f061798f169508ee7f185fdeb",
+  "sha256_after_A": "4bde0a660f97c42702b65c409a7c4378b6d5a6a7f933e23626cace4e0fd63099",
+  "sha256_after_D": "bcdd8de3fdfa81b15e27347477d88223dbffc1618c0f27a5fb27585449429a0e",
   "steps": [
     {
-      "detail": "initialized recovery/PROJECT_STATE.json",
+      "detail": "initialized PROJECT_STATE.json",
       "ok": true,
       "step": "A: init (process)"
     },
     {
-      "detail": "VALID: milestone=M5 version=0.1.0 next_task='M6: safety command channel' updated=2026-09-29T03:08:23.360144+00:00",
+      "detail": "VALID: milestone=M5 version=0.1.0 next_task='M6: safety command channel' updated=2026-09-29T03:25:24.744224+00:00",
       "ok": true,
       "step": "B: validate (new process)"
     },
     {
-      "detail": "updated recovery/PROJECT_STATE.json",
+      "detail": "updated PROJECT_STATE.json",
       "ok": true,
       "step": "C: show + set (continues work)"
     },
     {
-      "detail": "VALID: milestone=M5 version=0.1.0 next_task='M6a: e-stop command path' updated=2026-09-29T03:08:23.763616+00:00",
+      "detail": "VALID: milestone=M5 version=0.1.0 next_task='M6a: e-stop command path' updated=2026-09-29T03:25:25.124795+00:00",
       "ok": true,
       "step": "D: validate (post-continue)"
     }
   ],
-  "ts": "2026-09-29T03:08:24Z",
+  "ts": "2026-09-29T03:25:25Z",
   "valid": true
 }

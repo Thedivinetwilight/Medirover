@@ -17,7 +17,7 @@ make test-frontend
    `extend-immutable-calls` configured for `Depends`/`Query`).
 2. `mypy` — strict over backend/firmware/shared/tools/scripts; 0 errors.
 3. `pytest` — full suite (unit + integration + e2e) green.
-4. `node --test frontend/tests/` green.
+4. `node --test 'frontend/tests/**/*.test.mjs'` green.
 5. `tools/storage.py audit` — no storage growth beyond thresholds.
 6. **Diff review** — inspect the full diff before pushing (no bulk
    auto-fixes without review).

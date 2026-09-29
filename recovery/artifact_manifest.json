@@ -885,8 +885,8 @@
       "path": "recovery/PROJECT_STATE.json",
       "producer": "medirover",
       "retention": "CRITICAL",
-      "sha256": "83f5eff1706ba3c6953be8a8ddc8a7a854164c60fc575999a1a51f4306eea66c",
-      "size": 1801,
+      "sha256": "82e7368748fdcca80d7a8cc9afa2b5dcf031c1940faeb70fab5d93e86a68a049",
+      "size": 1777,
       "type": "state",
       "version": "0.1.0"
     },
@@ -895,8 +895,8 @@
       "path": "recovery/PROJECT_STATE.md",
       "producer": "medirover",
       "retention": "CRITICAL",
-      "sha256": "b1d627f640a525a05e11604d68823c744b1453fd71b4ea093675cdca48d9924a",
-      "size": 1595,
+      "sha256": "98f92678fa52d6456a78a4b452a4cc6b3ac66f154e1f3278d58ad5daae2feafb",
+      "size": 1571,
       "type": "state",
       "version": "0.1.0"
     },
@@ -915,8 +915,8 @@
       "path": "results/persistence_validation.json",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "72f3ae7a4ebd792afc28acee2acdb9fa6302214436d21a980890f63bf61ca7b1",
-      "size": 1001,
+      "sha256": "7c49bbaf2b660899c266e7e53e31d207d846199ac7ed66321254e0afd8ffcd0e",
+      "size": 983,
       "type": "canonical_result",
       "version": "0.1.0"
     },
@@ -925,7 +925,7 @@
       "path": "results/storage_audit.json",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "ee5992b2a4ae2c81f15609e7b0e955e6f2ea6ace4ff50336c0c7ceedcb639dde",
+      "sha256": "b776426048247a5f97748f5ecbf40bd400d443574cd3cafd669665a1f560832d",
       "size": 1329,
       "type": "canonical_result",
       "version": "0.1.0"
@@ -935,8 +935,8 @@
       "path": "results/test_history.jsonl",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "79c41821ead4edcf687d5fa9fd5523a5add85287fe3d333ebdd19ef4406acaca",
-      "size": 4687,
+      "sha256": "27a47c490f83745f67fb5ca1a1284b83a6e151fe4688f20ff6e1e53d79d4e024",
+      "size": 5075,
       "type": "canonical_result",
       "version": "0.1.0"
     },
@@ -1215,8 +1215,8 @@
       "path": "tests/persistence/test_process_boundary.py",
       "producer": "medirover",
       "retention": "CRITICAL",
-      "sha256": "ec69732b84cd853f8b4212b668b97810c5141de6c60e750319be304eb35d39bf",
-      "size": 4032,
+      "sha256": "b5492b1106185e4e6de1f5aafef5ce31063b58257d3ccc8903d31f775b299c1c",
+      "size": 4344,
       "type": "test",
       "version": "0.1.0"
     },
@@ -1335,8 +1335,8 @@
       "path": "tools/project_state.py",
       "producer": "medirover",
       "retention": "IMPORTANT",
-      "sha256": "35c51728872f3452939c195649bf1ee54639524254709e1820479eb43412d0cf",
-      "size": 7138,
+      "sha256": "e4ec0ca72847c159629113db35e3b980ad8921803ee5d023db7b9bd8e4eb4942",
+      "size": 7678,
       "type": "tooling",
       "version": "0.1.0"
     },
@@ -1352,7 +1352,7 @@
     }
   ],
   "entry_count": 135,
-  "generated_at": "2026-09-29T03:18:22.965023+00:00",
+  "generated_at": "2026-09-29T03:24:50.775047+00:00",
   "repo": "/home/user/Medirover",
   "schema_version": 1
 }

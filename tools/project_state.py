@@ -30,6 +30,25 @@ JSON_PATH = REPO_ROOT / "recovery" / "PROJECT_STATE.json"
 MD_PATH = REPO_ROOT / "recovery" / "PROJECT_STATE.md"
 
 
+def json_path() -> Path:
+    """Checkpoint JSON location.
+
+    Tests (and sandboxes) can redirect the tool via MEDIROVER_STATE_DIR so
+    subprocess-based tests never touch the real recovery/ directory.
+    """
+    override = os.environ.get("MEDIROVER_STATE_DIR")
+    if override:
+        return Path(override) / "PROJECT_STATE.json"
+    return JSON_PATH
+
+
+def md_path() -> Path:
+    override = os.environ.get("MEDIROVER_STATE_DIR")
+    if override:
+        return Path(override) / "PROJECT_STATE.md"
+    return MD_PATH
+
+
 def atomic_write(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_suffix(path.suffix + ".tmp")
@@ -41,10 +60,10 @@ def atomic_write(path: Path, text: str) -> None:
 
 
 def load_state() -> ProjectState | None:
-    if not JSON_PATH.exists():
+    if not json_path().exists():
         return None
     try:
-        return ProjectState.model_validate(json.loads(JSON_PATH.read_text()))
+        return ProjectState.model_validate(json.loads(json_path().read_text()))
     except Exception:  # noqa: BLE001
         return None
 
@@ -60,7 +79,7 @@ def render_md(state: ProjectState) -> str:
     lines = [
         "# Medirover — Project State",
         "",
-        f"_Canonical machine-readable state: `{_display_path(JSON_PATH)}`. "
+        f"_Canonical machine-readable state: `{_display_path(json_path())}`. "
         f"Updated {state.updated_at.isoformat()}. This file is a rendered summary; "
         "do not edit by hand._",
         "",
@@ -117,8 +136,8 @@ def render_md(state: ProjectState) -> str:
 
 
 def write_state(state: ProjectState) -> None:
-    atomic_write(JSON_PATH, state.model_dump_json(indent=2) + "\n")
-    atomic_write(MD_PATH, render_md(state))
+    atomic_write(json_path(), state.model_dump_json(indent=2) + "\n")
+    atomic_write(md_path(), render_md(state))
 
 
 def cmd_init(args: argparse.Namespace) -> int:
@@ -129,7 +148,7 @@ def cmd_init(args: argparse.Namespace) -> int:
         data.update(overrides)
         state = ProjectState.model_validate(data)
     write_state(state)
-    print(f"initialized {_display_path(JSON_PATH)}")
+    print(f"initialized {_display_path(json_path())}")
     return 0
 
 
@@ -148,16 +167,16 @@ def cmd_set(args: argparse.Namespace) -> int:
     data["updated_at"] = to_iso(now_utc())
     state = ProjectState.model_validate(data)
     write_state(state)
-    print(f"updated {_display_path(JSON_PATH)}")
+    print(f"updated {_display_path(json_path())}")
     return 0
 
 
 def cmd_validate(args: argparse.Namespace) -> int:
-    orphans = list(JSON_PATH.parent.glob("*.tmp")) if args.recover else []
+    orphans = list(json_path().parent.glob("*.tmp")) if args.recover else []
     for orphan in orphans:
         orphan.unlink()
         print(f"removed orphan temp file: {orphan.name}")
-    if not JSON_PATH.exists():
+    if not json_path().exists():
         print("INVALID: PROJECT_STATE.json missing", file=sys.stderr)
         return 1
     state = load_state()
