@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Medirover — Operator Dashboard</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">MEDIROVER</span>
+      <span class="version" id="api-version">v?</span>
+      <span class="badge badge-sim" title="All node data in v0.1 comes from simulated nodes">SIMULATED</span>
+    </div>
+    <div class="feed-info">
+      <span class="feed-mode" id="feed-mode" title="Live data source for this dashboard">CONNECTING…</span>
+      <span class="clock" id="server-time"></span>
+    </div>
+  </header>
+
+  <main>
+    <section class="nodes" id="nodes" aria-label="Node status">
+      <div class="empty" id="nodes-empty">No nodes registered yet.</div>
+    </section>
+
+    <section class="events" aria-label="Event feed">
+      <h2>Events <span class="hint">latest 200, newest first</span></h2>
+      <ul id="events"></ul>
+    </section>
+  </main>
+
+  <footer class="statusbar">
+    <span id="node-count">0 nodes</span>
+    <span class="dot"></span>
+    <span>protocol v1 · source of truth: node heartbeats (backend supervisor)</span>
+  </footer>
+
+  <script type="module" src="/js/src/main.js"></script>
+</body>
+</html>
