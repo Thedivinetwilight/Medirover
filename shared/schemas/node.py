@@ -13,7 +13,7 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field
 
 from shared.constants import FIRMWARE_VERSION, MAX_TELEMETRY_SAMPLES
-from shared.types import SafetyState
+from shared.types import SafetyState, SourceKind
 
 
 class IdentifyPayload(BaseModel):
@@ -24,6 +24,9 @@ class IdentifyPayload(BaseModel):
     node_type: Literal["motion", "sensor", "hub"]
     firmware_version: str = Field(default=FIRMWARE_VERSION, min_length=1, max_length=32)
     capabilities: list[str] = Field(default_factory=list, max_length=32)
+    # Where this node's data comes from. The UI must always display it
+    # (master directive: simulation is never silently mistaken for hardware).
+    source_kind: SourceKind = SourceKind.SIMULATED
 
 
 class HeartbeatPayload(BaseModel):

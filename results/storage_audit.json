@@ -1,29 +1,33 @@
 {
-  "file_count": 145,
+  "file_count": 160,
   "largest_dirs": [
     [
+      "data",
+      135827
+    ],
+    [
       "backend",
-      93469
+      99362
     ],
     [
       "firmware",
-      48839
+      85460
+    ],
+    [
+      "recovery",
+      76585
     ],
     [
       "docs",
-      48019
+      50526
     ],
     [
       "tests",
       43938
     ],
     [
-      "recovery",
-      43897
-    ],
-    [
       "shared",
-      42168
+      42443
     ],
     [
       "frontend",
@@ -31,33 +35,41 @@
     ],
     [
       "tools",
-      16402
+      16763
     ],
     [
       "scripts",
       14098
-    ],
-    [
-      "results",
-      9080
     ]
   ],
   "largest_files": [
+    [
+      "data/medirover_sim.db",
+      135168
+    ],
     [
       "recovery/artifact_manifest.json",
       40549
     ],
     [
       "backend/services/node_manager.py",
-      23130
+      23082
+    ],
+    [
+      "firmware/tests/test_real_drivers.py",
+      11753
     ],
     [
       "scripts/clean_checkout.py",
       10347
     ],
     [
+      "recovery/CODE_INVENTORY.md",
+      9949
+    ],
+    [
       "firmware/communication/client.py",
-      9786
+      9848
     ],
     [
       "docs/ARCHITECTURE.md",
@@ -65,23 +77,11 @@
     ],
     [
       "tools/project_state.py",
-      7678
+      8039
     ],
     [
       "tests/conftest.py",
       7672
-    ],
-    [
-      "shared/errors/__init__.py",
-      6479
-    ],
-    [
-      "firmware/motion_node/node.py",
-      6379
-    ],
-    [
-      "backend/config.py",
-      6017
     ]
   ],
   "repo": "/home/user/Medirover",
@@ -91,7 +91,7 @@
     "warn_bytes": 209715200,
     "warn_files": 5000
   },
-  "total_bytes": 399211,
-  "ts": "2026-09-29T03:30:09.196795+00:00",
+  "total_bytes": 619492,
+  "ts": "2026-09-29T14:15:15.493318+00:00",
   "verdict": "OK"
 }

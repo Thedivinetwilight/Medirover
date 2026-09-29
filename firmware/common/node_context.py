@@ -11,6 +11,7 @@ from shared.constants import (
     DEFAULT_TELEMETRY_INTERVAL_S,
     FIRMWARE_VERSION,
 )
+from shared.types import SourceKind
 
 
 class NodeConfig(BaseModel):
@@ -19,6 +20,9 @@ class NodeConfig(BaseModel):
     node_type: Literal["motion", "sensor", "hub"] = "motion"
     capabilities: list[str] = Field(default_factory=list)
     firmware_version: str = FIRMWARE_VERSION
+    # Node constructors derive this from the hardware object (single source
+    # of truth); do not hand-set it when wiring real hardware.
+    source_kind: SourceKind = SourceKind.SIMULATED
 
     heartbeat_interval_s: float = Field(default=DEFAULT_HEARTBEAT_INTERVAL_S, gt=0)
     telemetry_interval_s: float = Field(default=DEFAULT_TELEMETRY_INTERVAL_S, gt=0)

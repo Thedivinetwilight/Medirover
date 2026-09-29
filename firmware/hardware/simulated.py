@@ -14,12 +14,14 @@ from __future__ import annotations
 import random
 
 from firmware.hardware.interfaces import (
+    IHardware,
     IMotorController,
     IPowerMonitor,
     ISafetyInput,
     ISensor,
     IStatusOutput,
 )
+from shared.types import SourceKind
 
 WHEEL_RADIUS_M = 0.05  # placeholder assumption (UNKNOWN real hardware)
 SPEED_RAMP_MPS2 = 1.0  # simulated motor acceleration limit
@@ -95,15 +97,20 @@ class _SimPower(IPowerMonitor):
     def __init__(self, hw: SimulatedHardware) -> None:
         self._hw = hw
 
-    def battery_voltage(self) -> float:
+    def battery_voltage(self) -> float | None:
         return self._hw.battery_voltage()
 
     def current_draw(self) -> float:
         return self._hw.motor_current()
 
 
-class SimulatedHardware:
+class SimulatedHardware(IHardware):
     """The simulated physical world for one node (deterministic per seed)."""
+
+    # Refine the interface types so test code can use simulation controls
+    # (engage/release) without casts.
+    safety_input: _SimSafetyInput
+    motors: _SimMotors
 
     def __init__(self, node_id: str, seed: int = 42, initial_battery_v: float = 12.6) -> None:
         self.node_id = node_id
@@ -131,6 +138,10 @@ class SimulatedHardware:
                 "motor_current", "A", self.motor_current, lambda: "motor_current" not in self._degraded
             ),
         ]
+
+    @property
+    def source_kind(self) -> SourceKind:
+        return SourceKind.SIMULATED
 
     # -- physics ----------------------------------------------------------
 
@@ -161,12 +172,12 @@ class SimulatedHardware:
         load = 0.8 * (abs(self._speed_l) + abs(self._speed_r))
         return base + load + self.rng.uniform(0.0, 0.02)
 
-    def battery_voltage(self) -> float:
+    def battery_voltage(self) -> float | None:
         return self.battery_v
 
     # -- sensors ----------------------------------------------------------
 
-    def sensors(self) -> list[SimulatedSensor]:
+    def sensors(self) -> list[ISensor]:
         return list(self._sensors)
 
     def mark_degraded(self, sensor_id: str, degraded: bool) -> None:

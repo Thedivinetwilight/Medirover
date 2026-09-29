@@ -260,7 +260,7 @@ class NodeManager:
             ip.node_id,
             connectivity=CS.ONLINE.value,
             safety_state=conn.safety_state.value,
-            source_kind=SourceKind.SIMULATED.value,  # v0.1: only simulated nodes exist
+            source_kind=ip.source_kind.value,
             last_heartbeat_at=to_iso(now),
             last_message_at=to_iso(now),
             last_sequence=env.sequence,
@@ -491,7 +491,7 @@ class NodeManager:
                         node_id=ip.node_id,
                         connectivity=CS.DISCONNECTED.value,
                         safety_state=SafetyState.SAFE.value,
-                        source_kind=SourceKind.SIMULATED.value,
+                        source_kind=ip.source_kind.value,
                         last_sequence=0,
                         uptime_s=0.0,
                         last_telemetry={},

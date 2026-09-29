@@ -124,6 +124,7 @@ class NodeProtocolClient:
                         node_type=self._config.node_type,
                         firmware_version=self._config.firmware_version,
                         capabilities=self._config.capabilities,
+                        source_kind=self._config.source_kind,
                     ).model_dump(mode="json"),
                 )
                 await self._await_welcome()

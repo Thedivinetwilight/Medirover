@@ -27,7 +27,7 @@ FAST = ClientSettings(
 )
 
 
-def _make_node(**overrides) -> tuple[MotionNode, FakeBackend, asyncio.Event]:
+def _make_node(**overrides) -> tuple[MotionNode, FakeBackend, asyncio.Event, SimulatedHardware]:
     client_end, server_end = MemoryLink.pair()
     fake = FakeBackend(server_end)
     config = NodeConfig(
@@ -44,7 +44,7 @@ def _make_node(**overrides) -> tuple[MotionNode, FakeBackend, asyncio.Event]:
     )
     hw = SimulatedHardware(config.node_id, seed=config.seed)
     node = MotionNode(config, hw, client_end, FAST)
-    return node, fake, asyncio.Event()
+    return node, fake, asyncio.Event(), hw
 
 
 async def _wait_until(predicate, timeout_s: float = 5.0) -> None:
@@ -58,13 +58,14 @@ async def _wait_until(predicate, timeout_s: float = 5.0) -> None:
 
 @pytest.mark.asyncio
 async def test_identify_heartbeat_telemetry():
-    node, fake, stop = _make_node()
+    node, fake, stop, hw = _make_node()
     tasks = [asyncio.create_task(node.run(stop)), asyncio.create_task(fake.run(stop))]
     try:
         await _wait_until(lambda: fake.identify is not None)
         assert fake.identify is not None
         assert fake.identify["node_id"] == "motion-t"
         assert fake.identify["node_type"] == "motion"
+        assert fake.identify["source_kind"] == "SIMULATED"
         await _wait_until(lambda: len(fake.heartbeats) >= 3 and len(fake.telemetry) >= 2)
         hb = fake.heartbeats[-1]
         assert hb["safety_state"] in (SafetyState.READY.value, SafetyState.ACTIVE.value)
@@ -79,7 +80,7 @@ async def test_identify_heartbeat_telemetry():
 
 @pytest.mark.asyncio
 async def test_drive_cycle_reaches_active_and_returns_to_ready():
-    node, fake, stop = _make_node()
+    node, fake, stop, hw = _make_node()
     tasks = [asyncio.create_task(node.run(stop)), asyncio.create_task(fake.run(stop))]
     saw_active = asyncio.Event()
 
@@ -92,7 +93,7 @@ async def test_drive_cycle_reaches_active_and_returns_to_ready():
         await _wait_until(lambda: node.safety.state == SafetyState.READY)
         await _wait_until(lambda: node.safety.state == SafetyState.ACTIVE or saw_active.is_set())
         # encoders advanced while active
-        assert node.hw.encoder_left > 0 or node.hw.encoder_right > 0
+        assert hw.encoder_left > 0 or hw.encoder_right > 0
         await _wait_until(lambda: node.safety.state == SafetyState.READY, timeout_s=3.0)
     finally:
         stop.set()
@@ -101,11 +102,11 @@ async def test_drive_cycle_reaches_active_and_returns_to_ready():
 
 @pytest.mark.asyncio
 async def test_estop_overrides_and_recovers():
-    node, fake, stop = _make_node()
+    node, fake, stop, hw = _make_node()
     tasks = [asyncio.create_task(node.run(stop)), asyncio.create_task(fake.run(stop))]
     try:
         await _wait_until(lambda: node.safety.state == SafetyState.READY)
-        node.hw.safety_input.engage()
+        hw.safety_input.engage()
         await _wait_until(lambda: node.safety.state == SafetyState.EMERGENCY_STOP, timeout_s=2.0)
         assert node.hw.motors.get_speeds() == (0.0, 0.0)
         # heartbeats must reflect EMERGENCY_STOP
@@ -115,7 +116,7 @@ async def test_estop_overrides_and_recovers():
             ),
             timeout_s=2.0,
         )
-        node.hw.safety_input.release()
+        hw.safety_input.release()
         await _wait_until(lambda: node.safety.state == SafetyState.READY, timeout_s=3.0)
     finally:
         stop.set()

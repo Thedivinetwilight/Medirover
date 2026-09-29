@@ -24,11 +24,13 @@ Current date of this matrix: 2026-09-29 (rebuild commit series).
 | Sensor node (Python reference firmware) | UNIT-TESTED / PARTIAL | implemented + unit tests; not yet exercised in the e2e slice |
 | Demo script (scripts/demo.py) | IMPLEMENTED / SIMULATION-VERIFIED-equivalent path | same server+node path covered by e2e; script itself not run in CI |
 | Clean-checkout validation script | SIMULATION-VERIFIED (local-clone run green, exit 0) | `results/clean_checkout_validation.json` (10/10 steps ok, 2026-09-29) |
-| Real hardware drivers (motors, encoders, E-stop wiring, battery) | NOT-STARTED | `firmware/hardware/` defines interfaces; only `simulated.py` exists |
+| Real hardware drivers (motors, encoders, E-stop, battery) — skeleton | PARTIAL (UNIT-TESTED, fault-injected) / physical UNVERIFIED | `firmware/hardware/real/` (M8): `DualMotorDriver`, `EstopLatch`, `EncoderPair`, `BatteryMonitor`, `RealHardware` facade over the `Board` port; `firmware/tests/test_real_drivers.py` (17 tests) pins interlocks against `MemoryBoard`; real wiring = M9/M10 |
+| Hardware origin label (source_kind) end-to-end | SIMULATION-VERIFIED | node reports on identify (`source_kind`), backend honors it in runtime state + DB (`backend/tests/test_source_kind.py`), live boot check shows SIMULATED |
 | MCU firmware port | NOT-STARTED | milestone M9 |
 | Authentication / TLS | NOT-STARTED | known gap, see SECURITY.md |
 | Physical motion / E-stop on real hardware | NOT-STARTED — **no physical verification has been performed in this build** | — |
 
-Test totals at this commit: **185 Python tests passed + 4 frontend tests
-passed** (full suite ≈ 20 s local). Lint (ruff) and types (mypy, 86 files)
-clean.
+Test totals at this commit: **206 Python tests passed + 4 frontend tests
+passed** (full suite ≈ 20 s local). Lint (ruff) and types (mypy, 95 files)
+clean. M8 added 21 tests (17 driver fault-injection + 3 source_kind flow +
+1 hardware config lock).

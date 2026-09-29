@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-29T13:49:31.712327Z",
+  "updated_at": "2026-09-29T14:14:48.194011Z",
   "version": "0.1.0",
   "milestone": {
-    "current": "M8",
+    "current": "M9",
     "completed": [
       "M0",
       "M1",
@@ -12,53 +12,39 @@
       "M4",
       "M5",
       "M6",
-      "M7"
+      "M7",
+      "M8"
     ],
-    "next": "M8"
+    "next": "M9"
   },
   "status": {
-    "architecture": "GREEN",
-    "backend": "GREEN",
-    "frontend": "GREEN",
-    "firmware": "YELLOW",
-    "communication": "GREEN",
-    "database": "GREEN",
-    "safety": "GREEN",
-    "testing": "GREEN",
-    "simulation": "GREEN",
-    "hardware": "RED",
-    "security": "YELLOW",
-    "storage": "GREEN",
-    "reproducibility": "GREEN"
+    "hardware": "YELLOW"
   },
   "features": {
     "completed": [
-      "M0-M6 core rebuild",
-      "M5 vertical slice (SIMULATION-VERIFIED)",
-      "M6 failure/edge/crash/idempotency tests",
-      "tooling: project_state/storage/artifact_manifest",
-      "docs set (13 files) + README",
-      "M7 clean-checkout validation (local-clone run green)"
+      "M0-M6 core rebuild, M5 vertical slice (SIMULATION-VERIFIED), M6 failure/edge/crash/idempotency tests, tooling: project_state/storage/artifact_manifest, docs set (13 files) + README, M7 clean-checkout validation (local-clone run green)",
+      "M8: IHardware contract + RealHardware facade (firmware/hardware/real/: DualMotorDriver, EstopLatch, EncoderPair, BatteryMonitor, Board/MemoryBoard), source_kind identify->runtime->DB e2e, 17 fault-injection driver tests + 3 source_kind flow tests + 1 hardware config lock (206 py total)"
     ],
-    "active": null,
+    "active": "M9: real MCU firmware port (motion + sensor nodes) against the same protocol",
     "blocked": []
   },
   "known_issues": [
     "No auth/TLS — trusted local network only (M12)",
-    "No real hardware — drivers NOT-STARTED (M8-M10)",
-    "Frontend verified via WS payload, not browser rendering"
+    "No physical hardware verification — M8 drivers are fault-injected against MemoryBoard only; MCU port (M9) + physical integration (M10) NOT-STARTED",
+    "Frontend verified via WS payload, not browser rendering",
+    "Sensor node not yet exercised in the e2e vertical slice (coverage gap)"
   ],
   "test_status": {
-    "last_run": "2026-09-29T03:24:50Z",
-    "passed": 185,
+    "last_run": "2026-09-29T14:14:17Z",
+    "passed": 206,
     "failed": 0,
     "errors": 0,
-    "total": 185,
+    "total": 206,
     "history_path": "results/test_history.jsonl"
   },
   "hardware_status": "NO_HARDWARE_ATTACHED",
   "simulation_status": "SIMULATION-VERIFIED",
-  "next_task": "M8: hardware abstraction hardening + real driver skeletons (not started this session)",
+  "next_task": "M9 — real MCU firmware port (motion + sensor nodes) with the same shared protocol; acceptance: boot -> identify (source_kind=HARDWARE) -> heartbeat on real node, integration bench. Until then the codebase is stable: make check green (206 py + 4 frontend), boot check green.",
   "last_commit": "e5532a560f0be077827b8dad63d5c4588d7437e6",
   "repository": {
     "remote": "origin",
@@ -66,18 +52,34 @@
   },
   "decisions_index": "docs/LEGACY_DECISIONS.md",
   "recovery": {
-    "snapshot_ts": "2026-09-29T13:45Z",
-    "repository": "Thedivinetwilight/Medirover",
     "branch": "arena/01a0eafd-medirover",
-    "starting_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498",
-    "source_tree_summary": "140 tracked files: backend (FastAPI+SQLAlchemy+alembic), firmware (Python reference nodes + simulated hardware), frontend (no-build ES dashboard), shared (protocol/FSM contracts), config/tools/scripts/tests/docs; 7576 LOC Python",
-    "languages_frameworks": "Python 3.11 (FastAPI, SQLAlchemy2, alembic, pydantic, websockets); JS ES modules; YAML; Node 22",
-    "test_commands": "make check (ruff+mypy+pytest); make test-frontend; make clean-checkout",
     "build_commands": "make install; make migrate; make demo",
-    "major_subsystems": "[backend api, node manager, ingest, eventing, broadcaster, supervisor, migrations, safety/connectivity FSMs, protocol validator, motion/sensor nodes, simulated hardware, frontend store/ws, demo+clean-checkout scripts, state/storage/manifest tools]",
-    "detected_todos": "none (0 TODO/FIXME); 2 dangling doc refs found and fixed",
-    "incomplete_areas": "real hardware drivers (M8), MCU port (M9), physical integration (M10/M11), auth/TLS (M12), sensor-node e2e coverage",
-    "hardware_dependent_areas": "firmware/hardware/simulated.py (placeholder params), config/hardware.yaml (ACK-gated), docs/SAFETY.md M10 checklist",
+    "detected_todos": "none (0 TODO/FIXME)",
+    "hardware_dependent_areas": "firmware/hardware/real/ (Board port = the M9/M10 boundary), config/hardware.yaml (ACK-gated, drive_every_s=0.0 locked by test), docs/SAFETY.md M10 checklist",
+    "incomplete_areas": "MCU port (M9), physical integration (M10/M11), auth/TLS (M12), sensor-node e2e coverage",
+    "languages_frameworks": "Python 3.11 (FastAPI, SQLAlchemy2, alembic, pydantic, websockets); JS ES modules; YAML; Node 22",
+    "major_subsystems": [
+      "backend api",
+      "node manager",
+      "ingest",
+      "eventing",
+      "broadcaster",
+      "supervisor",
+      "migrations",
+      "safety/connectivity FSMs",
+      "protocol validator",
+      "motion/sensor nodes",
+      "simulated hardware",
+      "real driver skeletons (M8)",
+      "frontend store/ws",
+      "demo+clean-checkout scripts",
+      "state/storage/manifest tools"
+    ],
+    "repository": "Thedivinetwilight/Medirover",
+    "snapshot_ts": "2026-09-29T14:20Z",
+    "source_tree_summary": "backend (FastAPI+SQLAlchemy+alembic), firmware (reference nodes + simulated hardware + real driver skeletons), frontend (no-build ES dashboard), shared (protocol/FSM contracts), config/tools/scripts/tests/docs; ~8.1k LOC Python",
+    "starting_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498",
+    "test_commands": "make check (ruff+mypy+pytest); make test-frontend; make clean-checkout",
     "verification_limitations": "software-only verification (SIMULATION-VERIFIED/UNIT/INTEGRATION); no physical hardware exercised; no headless-browser UI test; legacy codebase contents UNKNOWN"
   }
 }

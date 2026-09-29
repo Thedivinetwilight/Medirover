@@ -12,9 +12,9 @@ is never claimed as hardware verification).
 | | |
 |---|---|
 | Vertical slice (simulated) | ✅ SIMULATION-VERIFIED — simulated node → identify → heartbeat → telemetry → backend → database → API → dashboard live status; disconnect → OFFLINE + event + UI; reconnect → recovery |
-| Test suite | ✅ 185 Python + 4 frontend tests, green (≈20 s) |
-| Lint / types | ✅ ruff clean, mypy clean (86 files) |
-| Real hardware | ⬜ NOT-STARTED (milestones M8–M10) — no physical verification exists |
+| Test suite | ✅ 206 Python + 4 frontend tests, green (≈20 s) |
+| Lint / types | ✅ ruff clean, mypy clean (95 files) |
+| Real hardware | 🟨 PARTIAL (M8) — driver skeletons + safety interlocks, fault-injected in software (`firmware/hardware/real/`); physical verification still NOT-STARTED (M9/M10) — no real motor/E-stop/battery exercised |
 | Auth / TLS | ⬜ NOT-STARTED (milestone M12) — trusted-local-network assumption, see `docs/SECURITY.md` |
 
 Full component table: [`docs/STATUS_MATRIX.md`](docs/STATUS_MATRIX.md) ·

@@ -53,6 +53,24 @@ def test_hardware_requires_ack(monkeypatch):
     assert settings.environment == Environment.HARDWARE
 
 
+def test_hardware_profile_locks_automatic_drive_off():
+    """Safety rule 4/10: the hardware profile must never self-issue motion.
+
+    Physical motion starts only on explicit operator command; the config
+    must keep the self-issued demo drive cycle disabled.
+    """
+    import os
+
+    os.environ["MEDIROVER_HARDWARE_ACK"] = "yes"
+    try:
+        settings = load_environment_config("hardware")
+    finally:
+        os.environ.pop("MEDIROVER_HARDWARE_ACK", None)
+    assert settings.environment == Environment.HARDWARE
+    assert settings.demo.drive_every_s == 0.0  # no automatic physical motion
+    assert settings.demo.drop_every_s == 0.0  # no simulated link drops on real hardware
+
+
 def test_env_var_overrides(monkeypatch, tmp_path):
     monkeypatch.setenv("MEDIROVER_PORT", "9911")
     monkeypatch.setenv("MEDIROVER_DB_URL", f"sqlite:///{tmp_path}/x.db")

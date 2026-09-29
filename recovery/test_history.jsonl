@@ -5,3 +5,10 @@
 {"command": "pytest (full suite)", "errors": "", "failed": "0", "git_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498", "passed": "185", "result": "PASS", "ts": "2026-09-29T13:43:41Z"}
 {"command": "node --test frontend", "errors": "", "failed": "0", "git_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498", "passed": "4", "result": "PASS", "ts": "2026-09-29T13:43:41Z"}
 {"command": "backend boot (demo --env simulation --port 8123) + API health + node ONLINE + telemetry + index", "errors": "health ok; node motion-01 ONLINE/READY/SIMULATED; telemetry rows present; index served MEDIROVER", "failed": "0", "git_commit": "b0dd83f7a16e4c956ccb54b9f6e0dd96f2dfc498", "passed": "5", "result": "PASS", "ts": "2026-09-29T13:44:35Z"}
+{"command": "ruff check .", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "null", "result": "PASS", "ts": "2026-09-29T14:14:13Z"}
+{"command": "mypy", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "95", "result": "PASS", "ts": "2026-09-29T14:14:13Z"}
+{"command": "ruff check .", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "null", "result": "PASS", "ts": "2026-09-29T14:14:17Z"}
+{"command": "mypy", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "95", "result": "PASS", "ts": "2026-09-29T14:14:17Z"}
+{"command": "pytest (full)", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "206", "result": "PASS", "ts": "2026-09-29T14:14:17Z"}
+{"command": "node --test frontend", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "4", "result": "PASS", "ts": "2026-09-29T14:14:17Z"}
+{"command": "boot check: sim backend + demo node, /api/v1/health + /api/v1/nodes (source_kind=SIMULATED, ONLINE/READY)", "errors": "", "failed": "null", "git_commit": "281cce15cee82b5fc23a250b096b2039f35642e0", "passed": "null", "result": "PASS", "ts": "2026-09-29T14:14:17Z"}

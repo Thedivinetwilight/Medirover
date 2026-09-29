@@ -18,8 +18,7 @@ import time
 
 from firmware.common.node_context import NodeConfig
 from firmware.communication.client import ClientSettings, NodeProtocolClient
-from firmware.hardware.interfaces import ICommunication
-from firmware.hardware.simulated import SimulatedHardware
+from firmware.hardware.interfaces import ICommunication, IHardware
 from shared.safety import make_safety_fsm
 from shared.types import SafetyEvent, SafetyState
 
@@ -31,11 +30,11 @@ class MotionNode:
     def __init__(
         self,
         config: NodeConfig,
-        hardware: SimulatedHardware,
+        hardware: IHardware,
         transport: ICommunication,
         client_settings: ClientSettings | None = None,
     ) -> None:
-        self.config = config
+        self.config = config.model_copy(update={"source_kind": hardware.source_kind})
         self.hw = hardware
         self.transport = transport
         self.client_settings = client_settings

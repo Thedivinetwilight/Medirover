@@ -9,6 +9,8 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
+from shared.types import SourceKind
+
 
 class ISensor(ABC):
     @property
@@ -43,7 +45,11 @@ class IMotorController(ABC):
 
 class IPowerMonitor(ABC):
     @abstractmethod
-    def battery_voltage(self) -> float: ...
+    def battery_voltage(self) -> float | None:
+        """Latest battery voltage, or None when no reading is available.
+
+        None must be surfaced as degraded/unknown, never replaced by a guess.
+        """
 
     @abstractmethod
     def current_draw(self) -> float: ...
@@ -85,3 +91,38 @@ class ICommunication(ABC):
     @abstractmethod
     async def recv(self) -> str | None:
         """Next frame, or None when the link was closed."""
+
+
+class IHardware(ABC):
+    """The physical world of one node.
+
+    Both SimulatedHardware and the real-hardware facade implement this;
+    node logic depends only on it. ``source_kind`` is the single source of
+    truth for where this node's data comes from and is reported to the
+    backend in every identify.
+    """
+
+    node_id: str
+    motors: IMotorController
+    safety_input: ISafetyInput
+
+    @property
+    @abstractmethod
+    def source_kind(self) -> SourceKind: ...
+
+    @abstractmethod
+    def step(self, dt: float) -> None:
+        """Advance the physical layer by dt seconds (no-op semantics allowed)."""
+
+    @abstractmethod
+    def battery_voltage(self) -> float | None:
+        """Latest battery voltage, or None when no reading is available.
+
+        None must be surfaced as degraded/unknown, never replaced by a guess.
+        """
+
+    @abstractmethod
+    def sensors(self) -> list[ISensor]: ...
+
+    @abstractmethod
+    def set_indicators(self, indicators: dict[str, bool]) -> None: ...
