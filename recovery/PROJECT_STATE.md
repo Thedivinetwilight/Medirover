@@ -1,9 +1,9 @@
 # Medirover — Project State
 
-_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:08:47.119354+00:00. This file is a rendered summary; do not edit by hand._
+_Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-09-29T03:18:22.722102+00:00. This file is a rendered summary; do not edit by hand._
 
 **Version:** v0.1.0  
-**Milestone:** current `M7` | completed M0, M1, M2, M3, M4, M5, M6 | next M7
+**Milestone:** current `M8` | completed M0, M1, M2, M3, M4, M5, M6, M7 | next M8
 
 ## Area status
 
@@ -25,8 +25,8 @@ _Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-0
 
 ## Features
 
-- completed: M0-M6 core rebuild, M5 vertical slice (SIMULATION-VERIFIED), M6 failure/edge/crash/idempotency tests, tooling: project_state/storage/artifact_manifest, docs set (13 files) + README
-- active: M7 close: clean-checkout local run
+- completed: M0-M6 core rebuild, M5 vertical slice (SIMULATION-VERIFIED), M6 failure/edge/crash/idempotency tests, tooling: project_state/storage/artifact_manifest, docs set (13 files) + README, M7 clean-checkout validation (local-clone run green)
+- active: —
 - blocked: —
 
 ## Known issues
@@ -37,7 +37,7 @@ _Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-0
 
 ## Tests
 
-- last run: 2026-09-29T03:08:47+00:00 (185 passed / 0 failed / 0 errors, 185 total)
+- last run: 2026-09-29T03:18:22+00:00 (185 passed / 0 failed / 0 errors, 185 total)
 - history: `results/test_history.jsonl` (canonical, bounded)
 
 ## Hardware / simulation
@@ -47,9 +47,9 @@ _Canonical machine-readable state: `recovery/PROJECT_STATE.json`. Updated 2026-0
 
 ## Next task
 
-Run scripts/clean_checkout.py (local) -> results/clean_checkout_validation.json; focused commits; push; verify remote
+M8: hardware abstraction hardening + real driver skeletons with fault-injection unit tests (not started this session)
 
 ## Repository
 
-- origin @ process-boundary | last commit `process-boun`
+- origin @ process-boundary | last commit `e8e86fd1b198`
 - decisions: `docs/LEGACY_DECISIONS.md`

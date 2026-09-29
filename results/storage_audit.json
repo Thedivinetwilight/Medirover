@@ -1,5 +1,5 @@
 {
-  "file_count": 144,
+  "file_count": 145,
   "largest_dirs": [
     [
       "backend",
@@ -11,19 +11,19 @@
     ],
     [
       "docs",
-      47933
+      47989
     ],
     [
       "tests",
       43626
     ],
     [
-      "shared",
-      42168
+      "recovery",
+      43622
     ],
     [
-      "recovery",
-      39466
+      "shared",
+      42168
     ],
     [
       "frontend",
@@ -35,17 +35,17 @@
     ],
     [
       "scripts",
-      13631
+      14098
     ],
     [
       "results",
-      7033
+      8578
     ]
   ],
   "largest_files": [
     [
       "recovery/artifact_manifest.json",
-      36158
+      40226
     ],
     [
       "backend/services/node_manager.py",
@@ -53,7 +53,7 @@
     ],
     [
       "scripts/clean_checkout.py",
-      9880
+      10347
     ],
     [
       "firmware/communication/client.py",
@@ -91,7 +91,7 @@
     "warn_bytes": 209715200,
     "warn_files": 5000
   },
-  "total_bytes": 391283,
-  "ts": "2026-09-29T03:08:47.299441+00:00",
+  "total_bytes": 397507,
+  "ts": "2026-09-29T03:18:22.912605+00:00",
   "verdict": "OK"
 }

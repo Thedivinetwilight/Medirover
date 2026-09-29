@@ -77,6 +77,9 @@ def _ws_snapshot_check(port: int, timeout_s: float = 20.0) -> dict:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Medirover clean-checkout acceptance test")
     parser.add_argument("--remote", action="store_true", help="clone from GitHub remote")
+    parser.add_argument(
+        "--keep", action="store_true", help="keep the temp workspace on success (for inspection)"
+    )
     args = parser.parse_args()
 
     steps: list[dict] = []

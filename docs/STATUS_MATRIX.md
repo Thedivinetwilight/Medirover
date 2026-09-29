@@ -23,7 +23,7 @@ Current date of this matrix: 2026-09-29 (rebuild commit series).
 | Motion node (Python reference firmware) | SIMULATION-VERIFIED | e2e identify→ONLINE→telemetry→OFFLINE→reconnect |
 | Sensor node (Python reference firmware) | UNIT-TESTED / PARTIAL | implemented + unit tests; not yet exercised in the e2e slice |
 | Demo script (scripts/demo.py) | IMPLEMENTED / SIMULATION-VERIFIED-equivalent path | same server+node path covered by e2e; script itself not run in CI |
-| Clean-checkout validation script | IMPLEMENTED / UNVERIFIED (until first local run) | `scripts/clean_checkout.py`; output → `results/clean_checkout_validation.json` |
+| Clean-checkout validation script | SIMULATION-VERIFIED (local-clone run green, exit 0) | `results/clean_checkout_validation.json` (10/10 steps ok, 2026-09-29) |
 | Real hardware drivers (motors, encoders, E-stop wiring, battery) | NOT-STARTED | `firmware/hardware/` defines interfaces; only `simulated.py` exists |
 | MCU firmware port | NOT-STARTED | milestone M9 |
 | Authentication / TLS | NOT-STARTED | known gap, see SECURITY.md |
