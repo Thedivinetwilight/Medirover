@@ -1,0 +1,36 @@
+"""Protocol and system-wide numeric constants (single source of truth)."""
+
+PROTOCOL_VERSION = 1
+MESSAGE_VERSION = 1
+FIRMWARE_VERSION = "0.1.0"
+
+# Node types
+NODE_TYPE_MOTION = "motion"
+NODE_TYPE_SENSOR = "sensor"
+NODE_TYPE_HUB = "hub"
+NODE_TYPES = (NODE_TYPE_MOTION, NODE_TYPE_SENSOR, NODE_TYPE_HUB)
+
+# Timing defaults (seconds). Tests use faster values via configuration.
+DEFAULT_HEARTBEAT_INTERVAL_S = 1.0
+DEFAULT_TELEMETRY_INTERVAL_S = 1.0
+DEFAULT_STALE_AFTER_S = 3.0
+DEFAULT_OFFLINE_AFTER_S = 10.0
+DEFAULT_SUPERVISOR_SCAN_S = 0.2
+DEFAULT_IDENTIFY_TIMEOUT_S = 5.0
+
+# Frame validation
+MAX_TIMESTAMP_SKEW_S = 30.0
+MAX_FRAME_BYTES = 16 * 1024
+MAX_TELEMETRY_SAMPLES = 32
+
+# Per-connection duplicate tracking
+MAX_SEEN_MESSAGE_IDS = 1024
+
+# Bounded logs / retention
+MAX_EVENT_ROWS_RETAINED = 5000
+EVENT_RETENTION_S = 24 * 3600
+MAX_STORED_EVENTS_FRONTEND = 200
+
+# Node client reconnection (seconds)
+RECONNECT_BACKOFF_INITIAL_S = 0.5
+RECONNECT_BACKOFF_MAX_S = 10.0
